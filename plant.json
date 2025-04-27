@@ -1,0 +1,545 @@
+[
+    {
+      "productImg": "https://images.unsplash.com/photo-1614594975525-e45190c55d0b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Monstera Deliciosa",
+      "productDescription": "Large tropical leaves that create a bold, jungle vibe indoors.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.8,
+      "productPrice": 95,
+      "productDiscount": 12
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1632154451420-4692c397a6b5?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Snake Plant Laurentii",
+      "productDescription": "Tough and resilient, this plant thrives on neglect.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.7,
+      "productPrice": 80,
+      "productDiscount": 10
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1545239705-1564e58b9e4a?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Fiddle Leaf Fig",
+      "productDescription": "Iconic broad-leaved beauty for stylish interiors.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.9,
+      "productPrice": 115,
+      "productDiscount": 15
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1620311497344-bce841c9c060?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Peace Lily",
+      "productDescription": "Known for its stunning white flowers and air-purifying nature.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.6,
+      "productPrice": 70,
+      "productDiscount": 9
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1585598116402-c686b02ba581?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Bird of Paradise",
+      "productDescription": "Tropical vibes with huge, luxurious leaves.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.8,
+      "productPrice": 120,
+      "productDiscount": 13
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1622673037877-18ee56d1f990?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "ZZ Plant",
+      "productDescription": "Glossy, dark green leaves that need minimal care.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.7,
+      "productPrice": 60,
+      "productDiscount": 8
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1660756723808-d85024a7e5d4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Golden Pothos",
+      "productDescription": "Fast-growing vines that look amazing in any space.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.8,
+      "productPrice": 55,
+      "productDiscount": 11
+    },
+    {
+      "productImg": "https://example.com/images/natural/rubber-plant.jpg",
+      "productName": "Rubber Plant",
+      "productDescription": "Broad, shiny leaves that add a bold touch.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.7,
+      "productPrice": 90,
+      "productDiscount": 12
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1616132803693-958f93bffb5b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Majestic Palm",
+      "productDescription": "Soft, flowing fronds perfect for corner spaces.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.5,
+      "productPrice": 85,
+      "productDiscount": 14
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1599148401005-fe6d7497cb5e?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Boston Fern",
+      "productDescription": "Classic hanging fern with refreshing green fronds.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.6,
+      "productPrice": 58,
+      "productDiscount": 10
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1632380211596-b96123618ca8?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Aloe Vera",
+      "productDescription": "Healing plant with medicinal properties and striking leaves.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.7,
+      "productPrice": 50,
+      "productDiscount": 9
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1695952835952-f8975fbb28ec?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Dumb Cane",
+      "productDescription": "Large variegated leaves that stand out in any room.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.6,
+      "productPrice": 78,
+      "productDiscount": 12
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1598531403144-43fdb36c9ae8?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Areca Palm",
+      "productDescription": "Lush, feathery palms perfect for bright corners.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.8,
+      "productPrice": 100,
+      "productDiscount": 14
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1714507767656-2fb307e1b03d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Calathea Orbifolia",
+      "productDescription": "Striking striped leaves that move with the light.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.9,
+      "productPrice": 85,
+      "productDiscount": 10
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1573689705342-73173e359155?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Dragon Tree",
+      "productDescription": "Tall, slender tree that gives modern vibes.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.7,
+      "productPrice": 90,
+      "productDiscount": 11
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1643212482805-d2c7ff1cc661?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Umbrella Plant",
+      "productDescription": "Radiating leaves that bring calmness to the space.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.6,
+      "productPrice": 65,
+      "productDiscount": 9
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1651749298723-76f60d3f8025?q=80&w=1986&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Money Plant",
+      "productDescription": "Symbolizes prosperity and growth in homes.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.8,
+      "productPrice": 75,
+      "productDiscount": 12
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1567331711402-509c12c41959?q=80&w=1973&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Lucky Bamboo",
+      "productDescription": "An auspicious plant perfect for desks and gifts.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.7,
+      "productPrice": 48,
+      "productDiscount": 8
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1723651663878-cd4e6b7d57d9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Air Plant",
+      "productDescription": "No soil needed — the ultimate low-maintenance plant.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.9,
+      "productPrice": 55,
+      "productDiscount": 7
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1563127040-f90cbf2a0c82?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Bamboo Palm",
+      "productDescription": "Soft leaves that filter indoor air beautifully.",
+      "productCategory": "Natural Plants",
+      "productRating": 4.8,
+      "productPrice": 88,
+      "productDiscount": 10
+    },
+
+    {
+      "productImg": "https://images.unsplash.com/photo-1623839511121-a729c1bbf8ca?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Faux Monstera Plant",
+      "productDescription": "Lifelike Monstera that needs zero maintenance.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.7,
+      "productPrice": 85,
+      "productDiscount": 10
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1599009944997-3544a939813c?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Artificial Snake Plant",
+      "productDescription": "Realistic snake plant that stays fresh forever.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.8,
+      "productPrice": 70,
+      "productDiscount": 12
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1643819131797-46919f3009f7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Faux Fiddle Leaf Fig",
+      "productDescription": "Perfectly crafted fiddle leaf with natural veins.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.9,
+      "productPrice": 110,
+      "productDiscount": 15
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1711549007622-9e8a7608a8a5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Artificial Peace Lily",
+      "productDescription": "Delicate white blooms for everlasting beauty.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.7,
+      "productPrice": 60,
+      "productDiscount": 9
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1685821890193-3b0868e1b5e8?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Artificial Bird of Paradise",
+      "productDescription": "Big tropical leaves without any care.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.8,
+      "productPrice": 120,
+      "productDiscount": 13
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1676410408633-79228457cec4?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Faux ZZ Plant",
+      "productDescription": "Glossy leaves crafted for a stunning display.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.6,
+      "productPrice": 65,
+      "productDiscount": 10
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1677862467189-0a34226d27e8?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Artificial Golden Pothos",
+      "productDescription": "Trailing vines that look fresh year-round.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.8,
+      "productPrice": 55,
+      "productDiscount": 11
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1669455905300-e9b43cb259ad?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Faux Rubber Plant",
+      "productDescription": "Elegant rubber leaves in a stylish pot.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.7,
+      "productPrice": 90,
+      "productDiscount": 12
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1619356416218-f0c159e6a91e?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Artificial Majestic Palm",
+      "productDescription": "Create a tropical oasis in your living room.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.7,
+      "productPrice": 95,
+      "productDiscount": 14
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1508189031683-0bb5ae1a8101?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Faux Boston Fern",
+      "productDescription": "Brighten up shelves with forever-green fronds.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.6,
+      "productPrice": 50,
+      "productDiscount": 8
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1508224263498-ce9c37f837a1?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Artificial Aloe Vera",
+      "productDescription": "Charming succulent that always looks healthy.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.7,
+      "productPrice": 58,
+      "productDiscount": 9
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1701270631464-6fc582115f2f?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Faux Calathea Plant",
+      "productDescription": "Eye-catching patterns that last a lifetime.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.8,
+      "productPrice": 75,
+      "productDiscount": 10
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1677683492932-e6d00491996d?q=80&w=1925&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Faux Dracaena",
+      "productDescription": "Tall, structured leaves for modern decor.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.7,
+      "productPrice": 85,
+      "productDiscount": 11
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1632484788077-43692a0969d2?q=80&w=2145&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Artificial Succulent Set",
+      "productDescription": "A set of mini succulents perfect for desks.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.9,
+      "productPrice": 40,
+      "productDiscount": 7
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1585322081891-63c73e2703fe?q=80&w=1978&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Artificial Cactus",
+      "productDescription": "Desert vibes without the prickles.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.8,
+      "productPrice": 48,
+      "productDiscount": 8
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1596294995456-9f7e4c410cb7?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Faux Magnolia Tree",
+      "productDescription": "Elegant tree with rich green foliage.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.8,
+      "productPrice": 115,
+      "productDiscount": 12
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1734809468357-55359b0a5ac1?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Artificial Olive Tree",
+      "productDescription": "Mediterranean vibes with realistic olive leaves.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.9,
+      "productPrice": 125,
+      "productDiscount": 14
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1532920161727-344adb090f7f?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Faux Bamboo Plant",
+      "productDescription": "Bright and fresh-looking bamboo all year.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.7,
+      "productPrice": 70,
+      "productDiscount": 11
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1642384642864-bfc87fdd6ace?q=80&w=2126&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Artificial Ivy Vine",
+      "productDescription": "Perfect for wall hangings and DIY decor.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.6,
+      "productPrice": 35,
+      "productDiscount": 6
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1723559083767-082e5b1a2319?q=80&w=2127&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Artificial Palm Bush",
+      "productDescription": "Mini palm perfect for tabletops and small corners.",
+      "productCategory": "Artificial Plants",
+      "productRating": 4.7,
+      "productPrice": 55,
+      "productDiscount": 9
+    },
+
+    {
+      "productImg": "https://images.unsplash.com/photo-1680677643828-51c313c5fa06?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Minimalist Ceramic Pot",
+      "productDescription": "Elegant white ceramic pot for modern decor.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.8,
+      "productPrice": 45,
+      "productDiscount": 8
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1645129603960-f1ba77dbd198?q=80&w=2026&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Macrame Plant Hanger",
+      "productDescription": "Handwoven hanger to display your favorite plants.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.9,
+      "productPrice": 30,
+      "productDiscount": 7
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1716322048259-f5a13dbc3d13?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Tall Metal Plant Stand",
+      "productDescription": "Durable stand to elevate your plant displays.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.7,
+      "productPrice": 70,
+      "productDiscount": 10
+    },
+    {
+      "productImg": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcQgQYPVySPjo8szTeZQkloChMeOJSNKxvx8mZjAugdM7dhPjmHBfmj-xemDTCT1g1US3w1je1yFkmZB72E3ngHPooewM-lFgqCxeQcCDfNXTbA_lh-zLEqm",
+      "productName": "Brass Watering Can",
+      "productDescription": "Sleek watering can with a long spout for easy watering.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.8,
+      "productPrice": 55,
+      "productDiscount": 9
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1558969330-ce91b84b1348?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Garden Pruning Scissors",
+      "productDescription": "Sharp blades for precise plant trimming.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.7,
+      "productPrice": 25,
+      "productDiscount": 5
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1652284299343-f8ec616b7371?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Self-Watering Pot",
+      "productDescription": "Keeps your plants hydrated without the hassle.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.8,
+      "productPrice": 60,
+      "productDiscount": 11
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1627202626612-1e304a201b32?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Woven Hanging Basket",
+      "productDescription": "Natural fiber basket perfect for trailing plants.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.7,
+      "productPrice": 40,
+      "productDiscount": 8
+    },
+    {
+      "productImg": "https://m.media-amazon.com/images/I/71-hb6kBzLS._SL1500_.jpg",
+      "productName": "Glass Plant Mister",
+      "productDescription": "Gentle mist for humidity-loving plants.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.9,
+      "productPrice": 35,
+      "productDiscount": 6
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1701318188969-417ecf995083?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "DIY Terrarium Kit",
+      "productDescription": "Everything you need to build your own miniature garden.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.8,
+      "productPrice": 80,
+      "productDiscount": 12
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1673950382036-99e8dcef6c3a?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Wooden Plant Shelf",
+      "productDescription": "Multi-tiered shelf for organizing your plant collection.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.7,
+      "productPrice": 95,
+      "productDiscount": 13
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1693385998896-9934da1986a8?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Organic Plant Fertilizer",
+      "productDescription": "Boosts growth naturally with eco-friendly ingredients.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.6,
+      "productPrice": 28,
+      "productDiscount": 5
+    },
+    {
+      "productImg": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcSI93PqpS7aHRB-CfLfcSEB1CGzZIQ1YlFBy7WYEZIwGMjqMxRcwawpPnBv6kwLP_qUkytjvf9DB1l-g62muzqecqAbgrRmO22QnyvJ_rHz",
+      "productName": "Plant Label Set",
+      "productDescription": "Keep your plants organized with stylish labels.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.7,
+      "productPrice": 22,
+      "productDiscount": 4
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1672436973560-05523089dfac?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Decorative Pebbles Pack",
+      "productDescription": "Smooth stones perfect for pot top-dressing.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.8,
+      "productPrice": 30,
+      "productDiscount": 7
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1740415180456-040401860eef?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Grow Light Lamp",
+      "productDescription": "Full-spectrum LED grow light for indoor plants.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.9,
+      "productPrice": 105,
+      "productDiscount": 14
+    },
+    {
+      "productImg": "https://m.media-amazon.com/images/I/411FAMw9CML._SX300_SY300_QL70_FMwebp_.jpg",
+      "productName": "Foldable Potting Mat",
+      "productDescription": "Mess-free potting solution for indoor gardeners.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.7,
+      "productPrice": 32,
+      "productDiscount": 6
+    },
+    {
+      "productImg": "https://m.media-amazon.com/images/I/51uGUZK+8UL._AC_UF1000,1000_QL80_.jpg",
+      "productName": "Soil Moisture Meter",
+      "productDescription": "Accurate soil moisture readings to avoid overwatering.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.8,
+      "productPrice": 45,
+      "productDiscount": 8
+    },
+    {
+      "productImg": "https://images.unsplash.com/photo-1695740639466-7baecca4224d?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "productName": "Set of Clay Pots",
+      "productDescription": "Traditional terracotta pots for classic plant displays.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.6,
+      "productPrice": 50,
+      "productDiscount": 9
+    },
+    {
+      "productImg": "https://m.media-amazon.com/images/I/61+91BK4BbL.jpg",
+      "productName": "Plant Stand Duo",
+      "productDescription": "Set of two elegant stands for larger plants.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.7,
+      "productPrice": 85,
+      "productDiscount": 11
+    },
+    {
+      "productImg": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcScr_i0V3amVGaPy_J28OBJe1Sil0YNXcFp5kfgJE3HtW5mSvqNoWVR9LRJPq2jRG9JUmGUeigJRCHNkH-dUSVYPwckfnct1N7cML1v-TbBXEg0C0tccxcKEQ",
+      "productName": "Mini Indoor Greenhouse",
+      "productDescription": "Protect your plants with a stylish mini greenhouse.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.8,
+      "productPrice": 140,
+      "productDiscount": 15
+    },
+    {
+      "productImg": "https://m.media-amazon.com/images/I/51TaS5+IQ5L.jpg",
+      "productName": "Plant Support Stakes",
+      "productDescription": "Keep your growing plants upright and healthy.",
+      "productCategory": "Plant Accessories",
+      "productRating": 4.7,
+      "productPrice": 38,
+      "productDiscount": 7
+    }
+  ]
+  
