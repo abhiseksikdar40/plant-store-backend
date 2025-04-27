@@ -1,6 +1,6 @@
 const { initializePlantStoreData } = require('./db/db.connect')
 
-const fs = require('fs')
+// const fs = require('fs')
 const PlantStore = require('./models/plantStore.model')
 initializePlantStoreData()
 
@@ -15,31 +15,31 @@ const corsOptions = {
 app.use(cors(corsOptions));
 app.use(express.json());
 
-const jsonData = fs.readFileSync('plant.json', 'utf-8')
+// const jsonData = fs.readFileSync('plant.json', 'utf-8')
 
-const plantsData = JSON.parse(jsonData)
+// const plantsData = JSON.parse(jsonData)
 
-function seedData () {
-    try {
-        for(const plantData of plantsData){
-            const newPlantData = new PlantStore({
-                productImg: plantData.productImg,
-                productName: plantData.productName,
-                productDescription: plantData.productDescription,
-                productCategory: plantData.productCategory,
-                productRating: plantData.productRating,
-                productPrice: plantData.productPrice,
-                productDiscount: plantData.productDiscount
-            })
+// function seedData () {
+//     try {
+//         for(const plantData of plantsData){
+//             const newPlantData = new PlantStore({
+//                 productImg: plantData.productImg,
+//                 productName: plantData.productName,
+//                 productDescription: plantData.productDescription,
+//                 productCategory: plantData.productCategory,
+//                 productRating: plantData.productRating,
+//                 productPrice: plantData.productPrice,
+//                 productDiscount: plantData.productDiscount
+//             })
 
-            newPlantData.save()
-        }
-    } catch (error) {
-        console.log("Error seeding plant data.", error)
-    }
-}
+//             newPlantData.save()
+//         }
+//     } catch (error) {
+//         console.log("Error seeding plant data.", error)
+//     }
+// }
 
-// seedData()
+// // seedData()
 
 
 const PORT = 5000
