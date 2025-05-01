@@ -2,6 +2,7 @@ const { initializePlantStoreData } = require('./db/db.connect')
 
 // const fs = require('fs')
 const PlantStore = require('./models/plantStore.model')
+const Cart = require('./models/cart.model')
 initializePlantStoreData()
 
 const express = require("express");
@@ -121,3 +122,37 @@ app.get("/products/category/:productCategory", async (req, res) => {
         res.status(500).json({error: "Failed To Get Products By Category!"})
     }
 })
+
+
+app.post('/cart', async (req, res) => {
+    const { productId } = req.body;
+    try {
+        const cartItem = new Cart({product: productId})
+        await cartItem.save()
+        res.json(cartItem)
+    } catch (error) {
+        res.status(500).json({error: "Failed to add product in cart."})
+    }
+})
+
+app.get('/cart', async (req, res) => {
+    try {
+        const cartItems = await Cart.find().populate('product');
+        res.json(cartItems);
+    } catch (error) {
+        res.status(500).json({ error: "Failed to fetch cart items." });
+    }
+});
+
+app.delete('/cart/:id', async (req, res) => {
+    try {
+        const deletedItem = await Cart.findByIdAndDelete(req.params.id);
+        if (deletedItem) {
+            res.json({ message: "Item removed from cart." });
+        } else {
+            res.status(404).json({ error: "Cart item not found." });
+        }
+    } catch (error) {
+        res.status(500).json({ error: "Failed to remove item from cart." });
+    }
+});
