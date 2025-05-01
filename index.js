@@ -137,7 +137,7 @@ app.post('/cart', async (req, res) => {
 
 app.get('/cart', async (req, res) => {
     try {
-        const cartItems = await Cart.find().populate('product');
+        const cartItems = await Cart.find().populate('PlantStore');
         res.json(cartItems);
     } catch (error) {
         res.status(500).json({ error: "Failed to fetch cart items." });
