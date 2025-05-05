@@ -127,7 +127,7 @@ app.get("/products/category/:productCategory", async (req, res) => {
 
 async function addToCart(newProduct) {
     try {
-     const addProductToCart = new PlantStore(newProduct)
+        const addProductToCart = new Cart(newProduct);
      const savedCart = await addProductToCart.save()
      return savedCart
     } catch (error) {
@@ -148,16 +148,17 @@ async function addToCart(newProduct) {
 
 async function getCartList() {
     try {
-        const findAllCartItems = await PlantStore.find()
-        return findAllCartItems
+        const findAllCartItems = await Cart.find().populate('productId'); 
+        return findAllCartItems;
     } catch (error) {
-        console.log("Error occured while getting Cart Items.");  
+        console.log("Error occurred while getting Cart Items:", error);  
     }
 }
 
+
 app.get('/cart', async (req, res) => {
     try {
-        const cartItems = await getCartList.find().populate('PlantStore');
+        const cartItems = await getCartList();
         res.json(cartItems);
     } catch (error) {
         res.status(500).json({ error: "Failed to fetch cart items." });
@@ -166,9 +167,10 @@ app.get('/cart', async (req, res) => {
 
 
 
+
 async function deleteCart(recipeId) {
     try {
-        const findCartItemAndDelete = await RecipeApp.findByIdAndDelete(recipeId)
+        const findCartItemAndDelete = await Cart.findByIdAndDelete(recipeId);
         return findCartItemAndDelete
     } catch (error) {
         console.log("Error occured while deleting Cart Details.");  
@@ -177,7 +179,7 @@ async function deleteCart(recipeId) {
 
 app.delete('/cart/:id', async (req, res) => {
     try {
-        const deletedItem = await deleteCart.findByIdAndDelete(req.params.id);
+        const deletedItem = await deleteCart(req.params.id);
         if (deletedItem) {
             res.json({ message: "Item removed from cart." });
         } else {
