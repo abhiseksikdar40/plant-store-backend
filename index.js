@@ -148,7 +148,7 @@ async function addToCart(newProduct) {
 
 async function getCartList() {
     try {
-        const findAllCartItems = await Cart.find().populate('productId'); 
+        const findAllCartItems = await Cart.find().populate('product'); 
         return findAllCartItems;
     } catch (error) {
         console.log("Error occurred while getting Cart Items:", error);  
