@@ -3,6 +3,7 @@ const { initializePlantStoreData } = require('./db/db.connect')
 // const fs = require('fs')
 const PlantStore = require('./models/plantStore.model')
 const Cart = require('./models/cart.model')
+const Address = require('./models/address.model')
 initializePlantStoreData()
 
 const express = require("express");
@@ -188,3 +189,70 @@ app.delete('/cart/:id', async (req, res) => {
         res.status(500).json({ error: "Failed to remove item from cart." });
     }
 });
+
+
+// 🔹 Add Address
+async function addAddress(addressData) {
+    try {
+      const address = new Address(addressData);
+      const savedAddress = await address.save();  
+      return savedAddress;
+    } catch (error) {
+      console.log("Error occurred while adding Address.", error);
+    }
+  }
+
+  app.post("/address", async (req, res) => {
+    try {
+      const newAddress = await addAddress(req.body);
+      res.status(201).json({ address: newAddress });
+    } catch (error) {
+      res.status(500).json({ error: "Failed to add address." });
+    }
+  });
+
+
+  async function updateAddress(addressId, updatedData) {
+    try {
+      const updated = await Address.findByIdAndUpdate(addressId, updatedData, { new: true });
+      return updated;
+    } catch (error) {
+      console.log("Error occurred while updating Address.", error);
+    }
+  }
+
+  app.post("/address/update/:addressid", async (req, res) => {
+    try {
+      const updatedAddress = await updateAddress(req.params.addressid, req.body);
+      if (updatedAddress) {
+        res.json({ message: "Address updated successfully.", updatedAddress });
+      } else {
+        res.status(404).json({ error: "Address not found." });
+      }
+    } catch (error) {
+      res.status(500).json({ error: "Failed to update address." });
+    }
+  });
+  
+
+  async function deleteAddress(addressId) {
+    try {
+      const deleteAddress = await Address.findByIdAndDelete(addressId);
+      return deleteAddress;
+    } catch (error) {
+      console.log("Error occurred while deleting Address.", error);
+    }
+  }
+
+  app.delete("/address/delete/:id", async (req, res) => {
+    try {
+      const deletedAddress = await deleteAddress(req.params.id);
+      if (deletedAddress) {
+        res.json({ message: "Address removed successfully." });
+      } else {
+        res.status(404).json({ error: "Address not found." });
+      }
+    } catch (error) {
+      res.status(500).json({ error: "Failed to remove address." });
+    }
+  });
