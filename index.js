@@ -124,29 +124,59 @@ app.get("/products/category/:productCategory", async (req, res) => {
 })
 
 
-app.post('/cart', async (req, res) => {
-    const { productId } = req.body;
+async function addToCart(newProduct) {
     try {
-        const cartItem = new Cart({product: productId})
-        await cartItem.save()
-        res.json(cartItem)
+     const addProductToCart = new PlantStore(newProduct)
+     const savedCart = await addProductToCart.save()
+     return savedCart
     } catch (error) {
-        res.status(500).json({error: "Failed to add product in cart."})
+     console.log("Error Adding New Product To Cart", error);
+    }
+ }
+
+
+ app.post("/cart", async (req, res) => {
+    try {
+        const savedProduct = await addToCart(req.body)
+        res.status(201).json({message: "Product Send To Cart Successfully.", recipe: savedProduct})
+    } catch (error) {
+        res.status(500).json({error: "Failed To Send Product Data To Cart."})
     }
 })
 
+
+async function getCartList() {
+    try {
+        const findAllCartItems = await PlantStore.find()
+        return findAllCartItems
+    } catch (error) {
+        console.log("Error occured while getting Cart Items.");  
+    }
+}
+
 app.get('/cart', async (req, res) => {
     try {
-        const cartItems = await Cart.find().populate('PlantStore');
+        const cartItems = await getCartList.find().populate('PlantStore');
         res.json(cartItems);
     } catch (error) {
         res.status(500).json({ error: "Failed to fetch cart items." });
     }
 });
 
+
+
+async function deleteCart(recipeId) {
+    try {
+        const findCartItemAndDelete = await RecipeApp.findByIdAndDelete(recipeId)
+        return findCartItemAndDelete
+    } catch (error) {
+        console.log("Error occured while deleting Cart Details.");  
+    }
+}
+
 app.delete('/cart/:id', async (req, res) => {
     try {
-        const deletedItem = await Cart.findByIdAndDelete(req.params.id);
+        const deletedItem = await deleteCart.findByIdAndDelete(req.params.id);
         if (deletedItem) {
             res.json({ message: "Item removed from cart." });
         } else {
