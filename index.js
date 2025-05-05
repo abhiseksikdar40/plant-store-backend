@@ -123,6 +123,7 @@ app.get("/products/category/:productCategory", async (req, res) => {
     }
 })
 
+// Add to cart
 
 async function addToCart(newProduct) {
     try {
