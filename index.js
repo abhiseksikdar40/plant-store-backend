@@ -167,13 +167,12 @@ app.get('/cart', async (req, res) => {
 
 
 
-
-async function deleteCart(productId) {
+async function deleteCart(cartItemId) {
     try {
-        const findCartItemAndDelete = await Cart.findByIdAndDelete({product: productId});
-        return findCartItemAndDelete
+        const deleted = await Cart.findByIdAndDelete(cartItemId);
+        return deleted;
     } catch (error) {
-        console.log("Error occured while deleting Cart Details.");  
+        console.log("Error occurred while deleting Cart Details.", error);  
     }
 }
 
