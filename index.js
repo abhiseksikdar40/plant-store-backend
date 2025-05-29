@@ -189,6 +189,29 @@ app.delete("/cart/:id", async (req, res) => {
   }
 });
 
+
+async function getAllAddress() {
+  try {
+    const allAddress = await PlantStore.find();
+    return allAddress;
+  } catch (error) {
+    console.log("Error occured while getting all address.");
+  }
+}
+
+app.get("/address", async (req, res) => {
+  try {
+    const getAddress = await getAllAddress();
+    if (getAddress.length != 0) {
+      res.json(getAddress);
+    } else {
+      res.status(404).json({ error: "Address Not Found!" });
+    }
+  } catch (error) {
+    res.status(500).json({ error: "Failed To Get All Address!" });
+  }
+});
+
 // 🔹 Add Address
 async function addAddress(addressData) {
   try {
