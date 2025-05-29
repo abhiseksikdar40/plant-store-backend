@@ -190,6 +190,36 @@ app.delete("/cart/:id", async (req, res) => {
 });
 
 
+// ✅ Update Cart Quantity
+async function updateCartQuantity(cartItemId, newQuantity) {
+  try {
+    const updatedCartItem = await Cart.findByIdAndUpdate(
+      cartItemId,
+      { quantity: newQuantity },
+      { new: true }
+    );
+    return updatedCartItem;
+  } catch (error) {
+    console.log("Error occurred while updating Cart quantity.", error);
+  }
+}
+
+app.post("/cart/update/:cartItemId", async (req, res) => {
+  try {
+    const { quantity } = req.body;
+    const updatedItem = await updateCartQuantity(req.params.cartItemId, quantity);
+    if (updatedItem) {
+      res.json(updatedItem);
+    } else {
+      res.status(404).json({ error: "Cart item not found." });
+    }
+  } catch (error) {
+    res.status(500).json({ error: "Failed to update cart quantity." });
+  }
+});
+
+
+
 async function getAllAddress() {
   try {
     const allAddress = await Address.find();
