@@ -192,7 +192,7 @@ app.delete("/cart/:id", async (req, res) => {
 
 async function getAllAddress() {
   try {
-    const allAddress = await PlantStore.find();
+    const allAddress = await Address.find();
     return allAddress;
   } catch (error) {
     console.log("Error occured while getting all address.");
