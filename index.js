@@ -5,6 +5,7 @@ const PlantStore = require("./models/plantStore.model");
 const Cart = require("./models/cart.model");
 const Address = require("./models/address.model");
 const Wishlist = require("./models/wishlist.model")
+const Order = require("./models/order.model");
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -390,5 +391,32 @@ app.delete("/wishlist/:id", async (req, res) => {
     }
   } catch (error) {
     res.status(500).json({ error: "Failed to remove wishlist item." });
+  }
+});
+
+
+app.post("/orders", async (req, res) => {
+  try {
+    const { cartItems, addressId, totalAmount, orderDate } = req.body;
+
+    // validate fields
+    if (!cartItems || !addressId || !totalAmount || !orderDate) {
+      return res.status(400).json({ message: "Missing required fields" });
+    }
+
+    // Save order logic (example)
+    const order = new Order({
+      cartItems,
+      address: addressId,
+      totalAmount,
+      orderDate,
+    });
+
+    await order.save();
+
+    res.status(201).json({ message: "Order placed successfully" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Internal server error" });
   }
 });
