@@ -354,7 +354,7 @@ app.post("/wishlist", async (req, res) => {
 
 async function getWishlistItems() {
   try {
-    const allItems = await Wishlist.find();
+    const allItems = await Wishlist.find().populate("product");
     return allItems;
   } catch (error) {
     console.log("Error fetching wishlist items:", error);
