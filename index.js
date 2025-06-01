@@ -4,6 +4,7 @@ const { initializePlantStoreData } = require("./db/db.connect");
 const PlantStore = require("./models/plantStore.model");
 const Cart = require("./models/cart.model");
 const Address = require("./models/address.model");
+const Wishlist = require("./models/wishlist.model")
 const express = require("express");
 const cors = require("cors");
 const app = express();
@@ -326,3 +327,68 @@ const startServer = async () => {
 };
 
 startServer();
+
+
+async function addToWishlist(newWishlistItem) {
+  try {
+    const addedItem = new Wishlist(newWishlistItem);
+    const savedItem = await addedItem.save();
+    return savedItem;
+  } catch (error) {
+    console.log("Error adding product to wishlist:", error);
+  }
+}
+
+app.post("/wishlist", async (req, res) => {
+  try {
+    const savedWishlistItem = await addToWishlist(req.body);
+    res.status(201).json({
+      message: "Product added to wishlist successfully.",
+      item: savedWishlistItem,
+    });
+  } catch (error) {
+    res.status(500).json({ error: "Failed to add product to wishlist." });
+  }
+});
+
+
+async function getWishlistItems() {
+  try {
+    const allItems = await Wishlist.find();
+    return allItems;
+  } catch (error) {
+    console.log("Error fetching wishlist items:", error);
+  }
+}
+
+app.get("/wishlist", async (req, res) => {
+  try {
+    const items = await getWishlistItems();
+    res.json(items);
+  } catch (error) {
+    res.status(500).json({ error: "Failed to fetch wishlist items." });
+  }
+});
+
+
+async function removeWishlistItem(itemId) {
+  try {
+    const removedItem = await Wishlist.findByIdAndDelete(itemId);
+    return removedItem;
+  } catch (error) {
+    console.log("Error removing item from wishlist:", error);
+  }
+}
+
+app.delete("/wishlist/:id", async (req, res) => {
+  try {
+    const deleted = await removeWishlistItem(req.params.id);
+    if (deleted) {
+      res.json({ message: "Item removed from wishlist." });
+    } else {
+      res.status(404).json({ error: "Wishlist item not found." });
+    }
+  } catch (error) {
+    res.status(500).json({ error: "Failed to remove wishlist item." });
+  }
+});
