@@ -1,4 +1,3 @@
-
 const mongoose = require("mongoose");
 
 const orderSchema = new mongoose.Schema({
@@ -11,6 +10,14 @@ const orderSchema = new mongoose.Schema({
       quantity: Number,
     },
   ],
+  // New fields for Buy Now
+  product: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "Product",
+  },
+  quantity: {
+    type: Number,
+  },
   address: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "Address",

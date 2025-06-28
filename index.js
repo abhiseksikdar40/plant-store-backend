@@ -1,6 +1,6 @@
 const { initializePlantStoreData } = require("./db/db.connect");
 
-// const fs = require('fs')
+
 const PlantStore = require("./models/plantStore.model");
 const Cart = require("./models/cart.model");
 const Address = require("./models/address.model");
@@ -17,41 +17,11 @@ app.use(
   })
 );
 
-// const corsOptions = {
-//   origin: "*",
-// };
-
-// app.use(cors());
 
 app.use(express.json());
 
-// const jsonData = fs.readFileSync('plant.json', 'utf-8')
 
-// const plantsData = JSON.parse(jsonData)
 
-// function seedData () {
-//     try {
-//         for(const plantData of plantsData){
-//             const newPlantData = new PlantStore({
-//                 productImg: plantData.productImg,
-//                 productName: plantData.productName,
-//                 productDescription: plantData.productDescription,
-//                 productCategory: plantData.productCategory,
-//                 productRating: plantData.productRating,
-//                 productPrice: plantData.productPrice,
-//                 productDiscount: plantData.productDiscount
-//             })
-
-//             newPlantData.save()
-//         }
-//     } catch (error) {
-//         console.log("Error seeding plant data.", error)
-//     }
-// }
-
-// // seedData()
-
-// get all Products
 
 async function getAllProducts() {
   try {
@@ -415,6 +385,34 @@ app.post("/orders", async (req, res) => {
     await order.save();
 
     res.status(201).json({ message: "Order placed successfully" });
+  } catch (err) {
+    console.error(err);
+    res.status(500).json({ message: "Internal server error" });
+  }
+});
+
+
+app.post("/orders/buynow", async (req, res) => {
+  try {
+    const { productId, quantity, addressId, totalAmount, orderDate } = req.body;
+
+    // Validate required fields
+    if (!productId || !quantity || !addressId || !totalAmount || !orderDate) {
+      return res.status(400).json({ message: "Missing required fields" });
+    }
+
+    // Create order with single product and quantity
+    const order = new Order({
+      product: productId,
+      quantity,
+      address: addressId,
+      totalAmount,
+      orderDate,
+    });
+
+    await order.save();
+
+    res.status(201).json({ message: "Buy Now order placed successfully" });
   } catch (err) {
     console.error(err);
     res.status(500).json({ message: "Internal server error" });
